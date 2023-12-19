@@ -13,12 +13,10 @@ function generateNumber() {
         document.querySelector('h2').textContent = `Digite um número válido`;
         return;
     }
-    
+
     else{
     const result = Math.floor(Math.random() * (max - min + 1)) + min;
     // Exibindo o resultado no <h2>
     document.querySelector('h2').innerHTML = `Número sorteado:<b> ${result} </b>`;
 }
 }
-
-//OBS: Tentar colocar alguma condição que não permita a digitação do número máximo sendo igual ou menor que o número mínimo.
