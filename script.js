@@ -5,3 +5,5 @@ function generateNumber() {
     // Exibindo o resultado no <h2>
     document.querySelector('h2').innerHTML = `Número sorteado:<b> ${result} </b>`;
 }
+
+//OBS: Tentar colocar alguma condição que não permita a digitação do número máximo sendo igual ou menor que o número mínimo.
