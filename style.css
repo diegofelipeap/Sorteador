@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("./assets/background-kingdice.gif") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 38px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+img {
+    display: block;
+    margin: 0 auto 125px;
+    width: 323px;
+}
+
+input {
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.25);
+    height: 74px;
+    width: 342px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    opacity: 0.9;
+}
+
+input::placeholder {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.input-min {
+    margin-right: 62px;
+}
+
+button {
+    border-radius: 10px;
+    background: #AEC346;
+    box-shadow: 0px 18px 40px 0px rgba(174, 195, 70, 0.35);
+    width: 342px;
+    height: 72px;
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 2.5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 900px) {
+
+    img {
+        width: 200px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    input {
+        height: 50px;
+        width: 300px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .input-min {
+        margin: 0;
+    }
+
+    button {
+        width: 242px;
+        height: 65px;
+    }
+}
