@@ -2,11 +2,13 @@
 function showNumberInputs() {
     document.getElementById('numberInputs').style.display = 'block';
     document.getElementById('nameTextarea').style.display = 'none';
+    document.querySelector('h2').textContent = ''
 }
 
 function showNameTextarea() {
     document.getElementById('nameTextarea').style.display = 'block';
     document.getElementById('numberInputs').style.display = 'none';
+    document.querySelector('h2').textContent = ''; // Limpa o <h2>
 }
 
 function generateNumber() {
@@ -34,6 +36,7 @@ function generateNumber() {
 
 function generateName() {
 
+    document.querySelector('h2').textContent = '';
 
     const namesInput = document.querySelector(".input-names").value.trim(); // Pega os nomes inseridos
     const namesArray = namesInput.split(','); // Converte a string em um array de nomes
